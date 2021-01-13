@@ -8,18 +8,19 @@ class StringBuilder {
   }
 
   append(str) {
-    this._value = builder.value + str;
+    return this._value = builder.value + str;
   }
 
   prepend(str) {
-    this._value = str + this._value;
+    return this._value = str + this._value;
   }
 
   pad(str) {
-    this._value = str + this._value + str;
+    return this._value = str + this._value + str;
   }
 }
 
+// для проверки
 const builder = new StringBuilder('.');
 
 console.log(builder.value);
