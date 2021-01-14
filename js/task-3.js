@@ -9,19 +9,9 @@ class Storage {
   addItem(item) {
     this.items.push(item);
   }
-    // removeItem(item) {
-    //   const itemIndex = this.items.indexOf(item);
-    //   this.items.splice(itemIndex, 1);
-    // }
-    
-    // доп задание (через цикл)
   removeItem(item) {
-    for (const itemName of this.items) {
-      if (itemName.includes(item)) {
-        const itemIndex = this.items.indexOf(item);
-        this.items.splice(itemIndex, 1);
-      }
-    }
+    const itemIndex = this.items.indexOf(item);
+    this.items.splice(itemIndex, 1);
   }
 }
 
